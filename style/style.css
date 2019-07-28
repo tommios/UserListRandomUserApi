@@ -1,0 +1,113 @@
+body {
+    background-color: #e9e3e3;
+}
+
+div #head {
+    align-items: center;
+    font-size: large;
+    font-weight: 800;
+}
+
+div #user,
+div #userDetails {
+    align-items: center;
+}
+
+#user_data:nth-child(even) {
+    background-color: #bbb;
+}
+
+#user_data:nth-child(odd) {
+    background-color: #e9e3e3;
+}
+
+img {
+    border-radius: 100%;
+}
+
+#userDetails {
+    display: none;
+}
+
+p#name {
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+span {
+    font-weight: 800;
+}
+
+p {
+    font-size: small;
+    text-indent: 50px;
+    line-height: 70%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.chart {
+    float: left;
+    width: auto;
+    height: 42px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.search {
+    position: relative;
+}
+
+.search:after {
+    content: "";
+}
+
+.search form{
+    background: #e9e3e3;
+    position: relative;
+    float: right;
+    height: 60px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.search input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    margin-top: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #F9F0DA;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+
+.search input:focus {
+    width: 600px;
+}
+
+.search button {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #7a7a7c;
+    background: none;
+    border: none;
+}
+

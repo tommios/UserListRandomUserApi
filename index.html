@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js" integrity="sha256-rjYnB0Bull7k2XkbJ03UNGqMuMieR769uQVGSSlsi6A=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style/toggle.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/popup.css" />
+    <title>User List</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="nav">
+            <div class="chart">
+                <button type="button" id="btnChart">Show chart</button>
+            </div>
+
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search...">
+                    <button type="button" id="btnSearch"></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="list">
+            <div id="head" class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">Last</div>
+                <div class="col-sm-2">First</div>
+                <div class="col-sm-2">Username</div>
+                <div class="col-sm-2">Phone</div>
+                <div class="col-sm-2">Location</div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal_form">
+        <span id="modal_close">X</span>
+        <canvas id="genderChart" width="600" height="400"></canvas>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>
